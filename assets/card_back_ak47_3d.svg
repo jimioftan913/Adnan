@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="300" viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- White card back background -->
+  <rect width="200" height="300" fill="white"/>
+  
+  <!-- Gradient definitions for 3D effect -->
+  <defs>
+    <linearGradient id="metalGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E8E8E8;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#A0A0A0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#505050;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="woodGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B4513;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#654321;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3E2723;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Border -->
+  <rect x="10" y="10" width="180" height="280" rx="8" fill="none" stroke="#333" stroke-width="2"/>
+  
+  <!-- AK-47 Stock (wooden) -->
+  <ellipse cx="40" cy="200" rx="15" ry="35" fill="url(#woodGrad)" filter="url(#shadow)"/>
+  
+  <!-- AK-47 Receiver (metal) -->
+  <rect x="50" y="150" width="100" height="25" rx="3" fill="url(#metalGrad)" filter="url(#shadow)"/>
+  
+  <!-- AK-47 Gas Tube (top) -->
+  <rect x="50" y="130" width="95" height="12" rx="6" fill="url(#metalGrad)" opacity="0.8" filter="url(#shadow)"/>
+  
+  <!-- AK-47 Handguard (wooden) -->
+  <path d="M 55 175 L 135 175 L 140 195 L 50 195 Z" fill="url(#woodGrad)" filter="url(#shadow)"/>
+  
+  <!-- AK-47 Charging Handle -->
+  <rect x="155" y="145" width="8" height="35" fill="url(#metalGrad)" filter="url(#shadow)"/>
+  <circle cx="159" cy="145" r="5" fill="#707070" filter="url(#shadow)"/>
+  
+  <!-- AK-47 Front Sight Post -->
+  <rect x="130" y="110" width="4" height="25" fill="url(#metalGrad)" filter="url(#shadow)"/>
+  <rect x="125" y="108" width="14" height="4" fill="url(#metalGrad)" filter="url(#shadow)"/>
+  
+  <!-- AK-47 Rear Sight -->
+  <rect x="65" y="115" width="4" height="20" fill="url(#metalGrad)" filter="url(#shadow)"/>
+  <rect x="60" y="113" width="14" height="4" fill="url(#metalGrad)" filter="url(#shadow)"/>
+  
+  <!-- AK-47 Muzzle Brake -->
+  <circle cx="145" cy="162" r="6" fill="url(#metalGrad)" filter="url(#shadow)"/>
+  <circle cx="145" cy="162" r="4" fill="#404040"/>
+  
+  <!-- Barrel Details -->
+  <line x1="145" y1="155" x2="145" y2="170" stroke="#606060" stroke-width="1" opacity="0.6"/>
+  
+  <!-- Magazine (lower) -->
+  <path d="M 45 195 Q 40 210 43 240 L 65 245 L 68 195 Z" fill="url(#metalGrad)" opacity="0.9" filter="url(#shadow)"/>
+  
+  <!-- Magazine Ribs -->
+  <line x1="48" y1="200" x2="60" y2="235" stroke="#505050" stroke-width="0.5" opacity="0.5"/>
+  <line x1="52" y1="200" x2="63" y2="240" stroke="#505050" stroke-width="0.5" opacity="0.5"/>
+  
+  <!-- Trigger Guard -->
+  <path d="M 85 175 Q 85 185 95 185 Q 95 175 85 175" fill="url(#metalGrad)" opacity="0.7" filter="url(#shadow)"/>
+  
+  <!-- Text Label -->
+  <text x="100" y="270" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">
+    AK-47
+  </text>
+  
+  <!-- Wear Scratches -->
+  <line x1="60" y1="155" x2="75" y2="158" stroke="#808080" stroke-width="0.5" opacity="0.4"/>
+  <line x1="85" y1="152" x2="95" y2="149" stroke="#808080" stroke-width="0.5" opacity="0.4"/>
+  <line x1="110" y1="162" x2="120" y2="165" stroke="#808080" stroke-width="0.5" opacity="0.4"/>
+  
+  <!-- Shine highlights for 3D effect -->
+  <ellipse cx="75" cy="145" rx="8" ry="4" fill="white" opacity="0.3"/>
+  <ellipse cx="110" cy="155" rx="6" ry="3" fill="white" opacity="0.25"/>
+</svg>
