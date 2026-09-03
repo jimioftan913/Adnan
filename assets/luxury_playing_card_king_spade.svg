@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="240" height="360" viewBox="0 0 240 360" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradient definitions for luxury effect -->
+    <linearGradient id="cardBG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F5E6D3;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#E8D4B8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D9C4A8;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#FFC700;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#DAA520;stop-opacity:1" />
+    </linearGradient>
+    
+    <radialGradient id="gemGrad" cx="35%" cy="35%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:0.8" />
+      <stop offset="50%" style="stop-color:#E8D4B8;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#8B4513;stop-opacity:1" />
+    </radialGradient>
+    
+    <filter id="shadow">
+      <feDropShadow dx="2" dy="2" stdDeviation="4" flood-opacity="0.4"/>
+    </filter>
+    
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Pattern for luxury texture -->
+    <pattern id="pattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="10" cy="10" r="1" fill="#C0A080" opacity="0.1"/>
+    </pattern>
+  </defs>
+  
+  <!-- Outer shadow/border -->
+  <rect x="5" y="5" width="230" height="350" rx="12" fill="none" stroke="#8B7355" stroke-width="3" opacity="0.3"/>
+  
+  <!-- Main card background -->
+  <rect x="8" y="8" width="224" height="344" rx="10" fill="url(#cardBG)" filter="url(#shadow)"/>
+  
+  <!-- Luxury texture pattern overlay -->
+  <rect x="8" y="8" width="224" height="344" rx="10" fill="url(#pattern)"/>
+  
+  <!-- Gold border frame -->
+  <rect x="15" y="15" width="210" height="330" rx="8" fill="none" stroke="url(#goldGrad)" stroke-width="3"/>
+  <rect x="18" y="18" width="204" height="324" rx="7" fill="none" stroke="#DAA520" stroke-width="1" opacity="0.5"/>
+  
+  <!-- Decorative corner elements - Top Left -->
+  <g filter="url(#glow)">
+    <circle cx="30" cy="30" r="12" fill="url(#goldGrad)" opacity="0.8"/>
+    <path d="M 25 25 L 35 25 L 35 35 L 25 35 Z" fill="#FFD700" opacity="0.6"/>
+    <circle cx="30" cy="30" r="8" fill="none" stroke="#FFFFFF" stroke-width="1.5" opacity="0.7"/>
+  </g>
+  
+  <!-- Decorative corner elements - Top Right -->
+  <g filter="url(#glow)">
+    <circle cx="210" cy="30" r="12" fill="url(#goldGrad)" opacity="0.8"/>
+    <path d="M 205 25 L 215 25 L 215 35 L 205 35 Z" fill="#FFD700" opacity="0.6"/>
+    <circle cx="210" cy="30" r="8" fill="none" stroke="#FFFFFF" stroke-width="1.5" opacity="0.7"/>
+  </g>
+  
+  <!-- Decorative corner elements - Bottom Left -->
+  <g filter="url(#glow)">
+    <circle cx="30" cy="330" r="12" fill="url(#goldGrad)" opacity="0.8"/>
+    <path d="M 25 325 L 35 325 L 35 335 L 25 335 Z" fill="#FFD700" opacity="0.6"/>
+    <circle cx="30" cy="330" r="8" fill="none" stroke="#FFFFFF" stroke-width="1.5" opacity="0.7"/>
+  </g>
+  
+  <!-- Decorative corner elements - Bottom Right -->
+  <g filter="url(#glow)">
+    <circle cx="210" cy="330" r="12" fill="url(#goldGrad)" opacity="0.8"/>
+    <path d="M 205 325 L 215 325 L 215 335 L 205 335 Z" fill="#FFD700" opacity="0.6"/>
+    <circle cx="210" cy="330" r="8" fill="none" stroke="#FFFFFF" stroke-width="1.5" opacity="0.7"/>
+  </g>
+  
+  <!-- Center Suit Symbol - Spade (top) -->
+  <g filter="url(#glow)">
+    <path d="M 120 50 L 115 65 L 125 65 Z" fill="url(#goldGrad)"/>
+    <circle cx="120" cy="70" r="6" fill="url(#goldGrad)"/>
+    <path d="M 120 75 L 118 85 L 122 85 Z" fill="url(#goldGrad)" transform="rotate(180 120 85)"/>
+  </g>
+  
+  <!-- Luxury diamond pattern - center -->
+  <g filter="url(#glow)">
+    <circle cx="120" cy="140" r="30" fill="url(#gemGrad)" opacity="0.7"/>
+    <circle cx="120" cy="140" r="28" fill="none" stroke="#FFD700" stroke-width="2" opacity="0.8"/>
+    <path d="M 120 110 L 140 130 L 120 150 L 100 130 Z" fill="none" stroke="#FFFFFF" stroke-width="1.5" opacity="0.6"/>
+    <circle cx="120" cy="140" r="15" fill="none" stroke="#DAA520" stroke-width="1" opacity="0.5"/>
+  </g>
+  
+  <!-- Suit symbols and text - Top section -->
+  <text x="25" y="40" font-family="Georgia, serif" font-size="28" font-weight="bold" fill="url(#goldGrad)">♠</text>
+  <text x="25" y="65" font-family="Georgia, serif" font-size="16" font-weight="bold" fill="#8B4513">K</text>
+  
+  <!-- Suit symbols and text - Bottom section (rotated) -->
+  <g transform="translate(215, 320) rotate(180)">
+    <text x="0" y="0" font-family="Georgia, serif" font-size="28" font-weight="bold" fill="url(#goldGrad)">♠</text>
+    <text x="0" y="25" font-family="Georgia, serif" font-size="16" font-weight="bold" fill="#8B4513">K</text>
+  </g>
+  
+  <!-- Decorative floral patterns -->
+  <g opacity="0.3">
+    <!-- Left side flourish -->
+    <path d="M 40 120 Q 35 130 40 140 Q 45 135 40 120" fill="none" stroke="#DAA520" stroke-width="1.5"/>
+    <path d="M 40 160 Q 35 170 40 180 Q 45 175 40 160" fill="none" stroke="#DAA520" stroke-width="1.5"/>
+    
+    <!-- Right side flourish -->
+    <path d="M 200 120 Q 205 130 200 140 Q 195 135 200 120" fill="none" stroke="#DAA520" stroke-width="1.5"/>
+    <path d="M 200 160 Q 205 170 200 180 Q 195 175 200 160" fill="none" stroke="#DAA520" stroke-width="1.5"/>
+  </g>
+  
+  <!-- Ornamental line dividers -->
+  <line x1="35" y1="210" x2="205" y2="210" stroke="url(#goldGrad)" stroke-width="1.5" opacity="0.6"/>
+  <line x1="35" y1="215" x2="205" y2="215" stroke="#DAA520" stroke-width="0.5" opacity="0.4"/>
+  
+  <!-- Center luxury text -->
+  <text x="120" y="250" font-family="Georgia, serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#8B4513">LUXURY</text>
+  <text x="120" y="275" font-family="Georgia, serif" font-size="14" text-anchor="middle" fill="#DAA520" opacity="0.8">Edition</text>
+  
+  <!-- Subtle shine effect on card -->
+  <ellipse cx="60" cy="100" rx="40" ry="60" fill="#FFFFFF" opacity="0.05"/>
+  <ellipse cx="180" cy="250" rx="35" ry="50" fill="#FFFFFF" opacity="0.08"/>
+  
+  <!-- Inner luxury frame accent -->
+  <rect x="22" y="22" width="196" height="316" rx="6" fill="none" stroke="#FFD700" stroke-width="0.5" opacity="0.4"/>
+</svg>
