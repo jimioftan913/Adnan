@@ -10,6 +10,8 @@
 
 PK555 Game is a next-generation mobile earning platform designed for users in Pakistan. It brings together classic card games like Teen Patti, Rummy, Ludo, and exciting casino-style games — all in one app. Whether you're a casual gamer or looking to earn real money, PK555 Game offers a smooth and secure experience.
 
+**🌐 Official Website: [http://pk555app.com.pk/](http://pk555app.com.pk/)**
+
 ### 🎯 Features
 
 - 🎴 **Teen Patti** - Classic Indian card game
@@ -59,12 +61,13 @@ PK555 Game is a next-generation mobile earning platform designed for users in Pa
 ✅ User data protection
 ✅ Compliance with local regulations
 
-### 📞 Support
+### 📞 Support & Contact
 
 For support and inquiries:
-- 📧 Email: support@pk555game.com
+- 📧 Email: support@pk555app.com.pk
 - 💬 WhatsApp: +92-XXX-XXXXXXX
-- 🌐 Website: www.pk555game.com
+- 🌐 Website: [http://pk555app.com.pk/](http://pk555app.com.pk/)
+- 📱 Download Now: [http://pk555app.com.pk/](http://pk555app.com.pk/)
 
 ### 📄 License
 
@@ -80,8 +83,13 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## 🎊 **"PK555 Game Is live For You"** 🎊
 
+### 🚀 Join AK's PK555 Game Platform Today!
+
 **Download Now and Start Earning!**
+
+Visit: **[http://pk555app.com.pk/](http://pk555app.com.pk/)**
 
 ---
 
 *Last Updated: September 3, 2026*
+*Project: PK555 Game by AK*
